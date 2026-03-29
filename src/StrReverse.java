@@ -21,4 +21,14 @@ public class StrReverse {
         }
         return new String(charArray);
     }
+
+//        String rev = "";
+//
+//        int len = input.length();
+//
+//        for(int i=len-1;i>=0;i--){
+//            rev += input.charAt(i);
+//        }
+//        return rev;
+//    }
 }

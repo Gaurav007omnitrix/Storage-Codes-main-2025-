@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class Solu {
+class IntToRoman {
     public static void intToRoman() {
         Scanner sc=new Scanner(System.in);
         int num= sc.nextInt();

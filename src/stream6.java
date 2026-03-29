@@ -23,7 +23,7 @@ public class stream6 {
 //        Integer var= al.stream().max(Integer::compare).get(); return the maximum value present in a list
 //        System.out.println(var);
 
-      List<Integer> lt=  al.stream().sorted().collect(Collectors.toList()); //to sort the elements in list
+      List<Integer> lt=  al.stream().sorted().toList(); //to sort the elements in list
 
 //     al.stream().sorted(Collections.reverseOrder()).forEach(System.out::println);
 //       to sort the elements in descending order

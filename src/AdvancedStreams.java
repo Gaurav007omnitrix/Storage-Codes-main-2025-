@@ -36,7 +36,7 @@ public class AdvancedStreams {
         // 1. Find students from Miami with a grade greater than 8.0
         List<Student> miamiHighGrades = students.stream()
                 .filter(s -> s.city.equals("Miami") && s.grade > 8.0)
-                .collect(Collectors.toList());
+                .toList();
         System.out.println("1. Miami students with grade > 8.0: " + miamiHighGrades);
 
         // 2. Find the student with the highest grade
@@ -57,7 +57,7 @@ public class AdvancedStreams {
         // 5. List students sorted by age and then by grade
         List<Student> sortedStudents = students.stream()
                 .sorted(Comparator.comparingInt((Student s) -> s.age).thenComparingDouble(s -> s.grade))
-                .collect(Collectors.toList());
+                .toList();
         System.out.println("5. Students sorted by age, then grade: " + sortedStudents);
 
         // 6. Create a comma-separated list of student names

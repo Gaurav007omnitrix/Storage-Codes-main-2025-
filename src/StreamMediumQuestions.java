@@ -31,7 +31,7 @@ public class StreamMediumQuestions {
         List<String> filteredValues = values.stream()
                 .filter(Objects::nonNull) // Filters out null values
                 .filter(s -> !s.isEmpty()) // Filters out empty strings
-                .collect(Collectors.toList()); // Collects the remaining values into a list
+                .toList(); // Collects the remaining values into a list
         System.out.println("Filtered Values: " + filteredValues);
 
         // 4. Find the Longest Word
@@ -54,7 +54,7 @@ public class StreamMediumQuestions {
         List<List<Integer>> nestedList = Arrays.asList(Arrays.asList(1, 2, 3), Arrays.asList(4, 5, 6));
         List<Integer> flatList = nestedList.stream()
                 .flatMap(List::stream) // Flattens the nested lists into a single stream
-                .collect(Collectors.toList()); // Collects the result into a list
+                .toList(); // Collects the result into a list
         System.out.println("Flattened List: " + flatList);
 
         // 7. Find First Non-Repeating Character in a String
@@ -83,7 +83,7 @@ public class StreamMediumQuestions {
         // Steps: Sort words based on length
         List<String> sortedByLength = words.stream()
                 .sorted(Comparator.comparingInt(String::length)) // Sorts by string length
-                .collect(Collectors.toList()); // Collects result into a list
+                .toList(); // Collects result into a list
         System.out.println("Sorted by Length: " + sortedByLength);
 
         // 10. Find the Most Repeated Number

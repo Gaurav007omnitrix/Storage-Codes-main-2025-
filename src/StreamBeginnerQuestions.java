@@ -10,14 +10,14 @@ public class StreamBeginnerQuestions {
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
         List<Integer> evenNumbers = numbers.stream()
                 .filter(n -> n % 2 == 0)
-                .collect(Collectors.toList());
+                .toList();
         System.out.println("Even Numbers: " + evenNumbers);
 
         // 2. Convert List of Strings to Uppercase
         List<String> words = Arrays.asList("apple", "banana", "cherry");
         List<String> upperCaseWords = words.stream()
                 .map(String::toUpperCase)
-                .collect(Collectors.toList());
+                .toList();
         System.out.println("Uppercase Words: " + upperCaseWords);
 
         // 3. Find the First Element that Starts with 'S'
@@ -29,7 +29,7 @@ public class StreamBeginnerQuestions {
 
         // 4. Sum of All Elements
         Optional<Integer> sum = numbers.stream()
-                .reduce((num1, num2) -> num1 + num2);
+                .reduce(Integer::sum);
         System.out.println("Sum of Numbers: " + sum.get());
 
         // 5. Count Words with Length > 3
@@ -42,19 +42,18 @@ public class StreamBeginnerQuestions {
         // 6. Sorting Numbers in Descending Order
         List<Integer> sortedDesc = numbers.stream()
                 .sorted(Comparator.reverseOrder())
-                .collect(Collectors.toList());
+                .toList();
         System.out.println("Sorted Numbers (Descending): " + sortedDesc);
 
         // 7. Remove Duplicates from a List
         List<Integer> duplicateNumbers = Arrays.asList(1, 2, 3, 2, 4, 3, 5, 1);
         List<Integer> uniqueNumbers = duplicateNumbers.stream()
                 .distinct()
-                .collect(Collectors.toList());
+                .toList();
         System.out.println("Unique Numbers: " + uniqueNumbers);
 
         // 8. Convert List of Strings to a Single Comma-Separated String
-        String joinedWords = words.stream()
-                .collect(Collectors.joining(", "));
+        String joinedWords = String.join(", ", words);
         System.out.println("Comma-Separated String: " + joinedWords);
 
         // 9. Find the Maximum Value

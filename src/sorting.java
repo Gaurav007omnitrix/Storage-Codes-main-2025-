@@ -12,11 +12,11 @@ public class sorting {
                 }
             }
         }
-        for (int i = 0; i < n; i++) {
-            System.out.println(arr[i]);
-        int sh = arr[n - 2]; // second highest element
-        System.out.println(sh);
-    }
+        for (int j : arr) {
+            System.out.println(j);
+            int sh = arr[n - 2]; // second highest element
+            System.out.println(sh);
+        }
 
 
 

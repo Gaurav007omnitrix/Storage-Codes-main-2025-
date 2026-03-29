@@ -17,7 +17,7 @@ public class Substring {
 
     public static void main(String[] args) {
         Substring sm=new Substring();
-        String[] words = {"mass","as","hero","superhero"};
+        String[] words = {"mass","as","hero","superhero","ro"};
         System.out.println(sm.substringWords(words));
     }
 }
