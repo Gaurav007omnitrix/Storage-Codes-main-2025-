@@ -14,6 +14,7 @@ class IntToRoman {
             }
         }
         System.out.println("Corresponding Roman Numerals is: " + roman.toString());
+         sc.close();
     }
     public static void main(String[] args) {
 //        Scanner sc=new Scanner(System.in);

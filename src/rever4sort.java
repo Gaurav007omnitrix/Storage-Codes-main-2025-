@@ -36,6 +36,7 @@ public class rever4sort {
 
 
         System.out.println( Arrays.toString(arr));
+         sc.close();
         }
         }
 

@@ -3,7 +3,7 @@ public class Del {
         String str = "India   Is My     Country";
         char[] char1 = str.toCharArray();
         char[] char2 = new char[char1.length];
-        String str2 = null;
+        //String str2 = null;
         int k =0;
 
         for (int i = 0; i < char1.length; i++) {

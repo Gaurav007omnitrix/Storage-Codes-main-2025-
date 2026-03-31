@@ -18,6 +18,7 @@ public class prime7 {
             System.out.println(num +" is a prime number");
         else
             System.out.println(num +" is not a prime number");
+         s.close();
     }
 }
 //step 1: Read num

@@ -15,6 +15,7 @@ public class fibo {
             count++;
         }
         System.out.println(b);
+         sc.close();
     }
 }
 

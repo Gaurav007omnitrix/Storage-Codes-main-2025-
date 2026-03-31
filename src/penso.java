@@ -22,5 +22,6 @@ public class penso {
 //        for(int i:arr){
 //            System.out.println(i);
 //        }
+ sc.close();
     }
 }

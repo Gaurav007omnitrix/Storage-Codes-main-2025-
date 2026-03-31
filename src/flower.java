@@ -27,6 +27,7 @@ public class flower {
             }
         }
         System.out.println(false);
+         sc.close();
     }
     }
 

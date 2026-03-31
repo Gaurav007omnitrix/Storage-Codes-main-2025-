@@ -20,6 +20,7 @@ public class Collec1 {
 //
 //        }
         System.out.println(lt);
+         sc.close();
     }
 }
 //----------------------practice down---------------------------------------------
@@ -42,5 +43,6 @@ public class Collec1 {
             }
 
         System.out.println(lt2);
+         sc.close();
     }
 }
